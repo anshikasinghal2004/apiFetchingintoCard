@@ -24,9 +24,9 @@ const ProductList = () => {
                 <div key={product.id} className={styles.card} >
                     <img src={product.image} alt={product.title} className={styles.image} />
                     <div>
-                        <h3>{product.title}</h3>
-                        <p>{product.description}</p>
-                        <p>${product.price}</p>
+                        <h3 className={styles.heading}>{product.title}</h3>
+                        <p className={styles.para1}>{product.description}</p>
+                        <p className={styles.para2}>${product.price}</p>
                     </div>
                 </div>
             ))}
